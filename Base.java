@@ -4,8 +4,7 @@ package base;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
+import org.junit.annotations.BeforeClass;
 import pages.Homepage;
 
 public class Base {
@@ -18,7 +17,7 @@ public class Base {
         webSite(driver);
        homepage= new Homepage(driver);
     }
-    @BeforeMethod
+   
     public static void webSite( WebDriver driver){
 
         driver.get("https://www.bbc.co.uk/");
